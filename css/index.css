@@ -56,6 +56,10 @@ cursor:pointer;
     font-size: 30px;
     font-weight: 500px;
     }
+    .container-fluid{
+        text-align: center;
+        justify-content: space-evenly;
+    }
 
 
   
