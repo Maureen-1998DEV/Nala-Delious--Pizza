@@ -42,6 +42,8 @@ $(document).ready(function(){
         var numberOfPizza=$("#numberOfPizza").val();
         var deliveryOption=$("#deliveryOption").val();
         var inputLocation=$("#inputLocation").val();
-    var CustomerOder = new CustomerOrder()
+
+    (".formOutput").show()
+    var CustomerOder= new CustomerOder(pizzaSize,toppingsSelection,crustOption,numberOfPizza,deliveryOption,inputLocation)
     })
 })
