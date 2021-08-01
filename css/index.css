@@ -2,22 +2,22 @@
     margin: 0;
     padding: 0;
 }
-.formOutput {
+.orderCalculation {
     padding: 20px;
     margin: 0px auto;
-    background-color: orange;
+    background-color: tomato;
     color: black;
     border-radius: 4px;
     box-shadow: 0px 0px 10px gray;
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height: 400px;
     position: fixed;
     top: 15vh;
     right: 25%;
     left: 25%;
     z-index: 2;
     display: none;
-    
+    font-size: 20px;
 }
 .card{
     height: 850px !important;
@@ -77,7 +77,7 @@ cursor:pointer;
         text-align: center;
         justify-content: space-evenly;
     }
-    #inputLocation{
+    .locationArea{
         display: none;
     }
 

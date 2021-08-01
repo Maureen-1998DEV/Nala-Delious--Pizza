@@ -74,9 +74,10 @@
     </div>
 
     <div class="card text-warning bg-dark">
-        <div class="formOuput">
-            
+        <div class="orderCalculation">
+
         </div>
+          
         <img src="./Assetes/ivan-torres-MQUqbmszGGM-unsplash (1).jpg" class="landing-image" height="850px"
             alt="pizza photo">
         <div class="card-img-overlay">
@@ -86,11 +87,10 @@
                     <h4 class="textfour">Pizza-Size</h4>
                 </label>
                 <select id="pizzaSize" class="form-select">
-                    <option>select-Pizza-Size</option>
-                    <option>Small Pizza</option>
-                    <option>Medium Pizza</option>
-                    <option>Large Pizza</option>
-                    <option>Extra-Large-Pizza</option>
+                    <option value="default">Size</option>
+                    <option value="smallPizza">SmallPizza</option>
+                    <option value="MediumPizza">MediumPizza</option>
+                    <option value="LargePizza">LargePizza</option>
                 </select>
             </div>
             <div class="mb-3">
@@ -98,21 +98,21 @@
                     <h4 class="textfour">Toppings</h4>
                 </label>
                 <select id="toppingsSelection" class="form-select">
-                    <option>Topings</option>
-                    <option>Pepperoni</option>
-                    <option>Garlic butter prawns and chilli</option>
-                    <option> Supreme(beefmince,bacon,Olives)</option>
+                    <option value="default">Topings</option>
+                    <option value="Pepperoni">Pepperoni</option>
+                    <option value="Garlic_butter_prawns_chilli">Garlic_butter_prawns_chilli</option>
+                    <option value="Supreme"> Supreme(beefmince,bacon,Olives)</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="selection" class="form-label">
-                    <h4 class="textfour">Crust</h4>
+                    <h4 class="textfour">Crust</h4>.
                 </label>
                 <select id="crustOption" class="form-select">
-                    <option>Crust</option>
-                    <option>Crispy</option>
-                    <option>Stuffed</option>
-                    <option>Glutten free</option>
+                    <option value="default">Crust</option>
+                    <option value="Crispy">Crispy</option>
+                    <option value="Stuffed">Stuffed</option>
+                    <option value="Glutten_free">Glutten_free</option>
                 </select>
 
             </div>
@@ -122,17 +122,17 @@
                 </label>
                 <input type="number" min="1" id="numberOfPizza" value="1">
             </div>
-            <div class="form-check">
-            <input type="radio" id="exampleRadios1" value="option1">
+            <div class="deliveryOption">
+            <input type="radio"name="Destination" id="radiosPizza">
             <label for="Radiosbutton">Destination Delivery cost Ksh200</label>
         </div>
-        <div class="mb-3 btn-lg">
+        <div class="locationArea">
             <label for="text" class="form-label">
                 <h2>Location</h2>
             </label>
             <input type="text" class="form-control" id="inputLocation">
         </div>
-
+       
 
         <button id="orderButton" type="submit" class="btn-lg btn-warning">ODRDER🍕</button>
         </form>
@@ -151,8 +151,8 @@
 
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="./js/script.js"></script>
 
 </body>
