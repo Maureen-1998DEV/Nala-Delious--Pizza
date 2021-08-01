@@ -8,7 +8,7 @@ var CustomerOder = function (pizzaSize, toppingsSelection, crustOption, numberOf
     this.inputLocation = inputLocation;
 }
 //pizza size,toppings,crust prize//
-CustomerOder.prototype.NalaDeliousPizza = {
+CustomerOder.prototype.nalaDeliousPizza = {
     name: "Nala_Delious_Pizza",
 
     deliveryPrice: 200,
@@ -52,18 +52,18 @@ $(document).ready(function () {
         
 
         if (pizzaSize == "smallPizza" && toppingsSelection == "pepperoni" && crustOption == "crispy" && deliveryOption == "on"){
-            var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza +
-                customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-                customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-                customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+            var totalOrder = (customerOrder.NalaDeliousPizza.pizzaSizePrize[1].smallPizza +
+                customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+                customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+                customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
         var orderResults = `
         <h2>Order Placed</h2>
         <p>Number of Pizza: ${numberOfPizza}</p>
-        <p>Pizza size: SmallPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-        <p>Crust: Crispy - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy} </p>
-        <p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrize[1].Pepperoni}</p>
-        <p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+        <p>Pizza size: SmallPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+        <p>Crust: Crispy - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy} </p>
+        <p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrize[1].Pepperoni}</p>
+        <p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
         <hr>
         <p>Total: - KSh. ${totalOrder}</p>
             
@@ -73,18 +73,18 @@ $(document).ready(function () {
             }
         //small pizza with pepperoni and stuffed//
         if (pizzaSize == "smallPizza" && toppingsSelection == "pepperoni" && crustOption == "Stuffed" && deliveryOption == "on"){
-            var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza +
-                customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-                customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-                customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+            var totalOrder = (customerOrder.NalaDeliousPizza.pizzaSizePrize[1].smallPizza +
+                customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed +
+                customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+                customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
         var orderResults = `
        <h2>Order Placed</h2>
        <p>Number of orders: ${numberOfPizza}</p>
-      <p>Pizza size: SmallPrize - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-      <p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-     <p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrize[1].Pepperoni}</p>
-      <p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrize}</p>
+      <p>Pizza size: SmallPrize - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+      <p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+     <p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrize[1].Pepperoni}</p>
+      <p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrize}</p>
       <hr>
       <p>Total: - KSh. ${totalOrder}</p>
       `;
@@ -94,18 +94,18 @@ $(document).ready(function () {
        //small pizza with perpperoni and Glutten-free//
        if (pizzaSize == "smallPizza" && toppingsSelection == "pepperoni" && crustOption == "Glutten_free" && deliveryOption == "on"){
 
-            var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza +
-                customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-                customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-                customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+            var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza +
+                customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+                customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+                customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
         var orderResults = `
         <h2>Order Placed</h2>
         <p>Number of orders: ${numberOfPizza}</p>
-        <p>Pizza size: Small - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-        <p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-        <p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[1].Pepperoni}</p>
-        <p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+        <p>Pizza size: Small - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+        <p>Crust: Glutten_free - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+        <p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[1].Pepperoni}</p>
+        <p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
         <hr>
         <p>Total: - KSh. ${totalOrder}</p>
          `;
@@ -115,18 +115,18 @@ $(document).ready(function () {
      //pizza Grlic-butter_prawn//
     //pizza with Garlic_butter_prawns_chilli and crispy// 
     if (pizzaSize == "smallPizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "crispy" && deliveryOption == "on"){
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza +
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza +
+        customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
     var orderResults = `
     <h1>Order Placed</h1>
       <p>Number of orders: ${numberOfPizza}</p>
-   <p>Pizza size: SmallPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-   <p>Crust: crispy. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy} </p>
-   <p>Toppings:  Garlic_butter_prawns_chilli- KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-  <p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+   <p>Pizza size: SmallPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+   <p>Crust: crispy. ${customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy} </p>
+   <p>Toppings:  Garlic_butter_prawns_chilli- KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+  <p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
    <hr>
    <p>Total: - KSh. ${totalOrder}</p>
    `;
@@ -135,18 +135,18 @@ $(document).ready(function () {
     }
    //small pizza with Garlic_butter_prawns_chilliand stuffed//
     if (pizzaSize == "smallPizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "Stuffed" && deliveryOption == "on"){
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza+
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.NalaDeliousPizza.pizzaSizePrize[1].smallPizza+
+        customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
     var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${pizzaNumber}</p>
-<p>Pizza size: SmallPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-<p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-<p>Toppings:  - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: SmallPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+<p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+<p>Toppings:  - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
      `;
@@ -155,18 +155,18 @@ $(document).ready(function () {
     }
        //small pizza with Garlic_butter_prawns_chilli and Glutten-free//
     if (pizzaSize == "smallPizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "Glutten_free" && deliveryOption == "on"){
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza +
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.NalaDeliousPizza.pizzaSizePrize[1].smallPizza +
+        customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
      var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: SmallPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-<p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-<p>Toppings: Pepper0ni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: SmallPizza - KSh. ${customerOrder.NalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+<p>Crust: Glutten_free - KSh. ${customerOrder.NalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+<p>Toppings: Pepper0ni - KSh. ${customerOrder.NalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.NalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
     `;
@@ -175,18 +175,18 @@ $(document).ready(function () {
     } 
     //pizza Supreme//
     if (pizzaSize == "smallPizza" && toppingsSelection == "Supreme" && crustOption == "crispy" && deliveryOption == "on"){
-        var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza +
-            customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-            customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-            customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+        var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza +
+            customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+            customerOrder.nalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+            customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
     
     var orderResults = `
     <h2>Order Placed</h2>
     <p>Number of orders: ${numberOfPizza}</p>
-    <p>Pizza size: SmallPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-    <p>Crust: Garlic_butter_prawns_chilli - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].crispy} </p>
-    <p>Toppings: Supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[3].supreme}</p>
-    <p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+    <p>Pizza size: SmallPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+    <p>Crust: Garlic_butter_prawns_chilli - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].crispy} </p>
+    <p>Toppings: Supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[3].supreme}</p>
+    <p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
     <hr>
     <p>Total: - KSh. ${totalOrder}</p>
     `;
@@ -195,18 +195,18 @@ $(document).ready(function () {
         }
     //small pizza with Garlic_butter_prawns_chilliand stuffed//
     if (pizzaSize == "smallPrize" && toppingsSelection == "Supreme" &&crustOption=="stuffed"&& deliveryOption == "on"){
-        var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].small +
-            customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-            customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-            customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+        var totalOrder = (customerOrder.nalaDelious_Pizza.pizzaSizePrize[1].small +
+            customerOrder.NalaDeliousPizza.crustOptionPrize[2].Stuffed +
+            customerOrder.NalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+            customerOrder.NalaDeliousPizza.deliveryPrice) * numberOfPizza;
     
     var orderResults = `
     <h2>Order Placed</h2>
     <p>Number of orders: ${numberOfPizza}</p>
-    <p>Pizza size: SmallPrize - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-    <p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-    <p>Toppings: Supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-    <p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+    <p>Pizza size: SmallPrize - KSh. ${customerOrder.NalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+    <p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+    <p>Toppings: Supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+    <p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
     <hr>
     <p>Total: - KSh. ${totalOrder}</p>
     `;
@@ -215,18 +215,18 @@ $(document).ready(function () {
     }
     // pizza with Garlic_butter_prawns_chilli and Glutten-free//
     if (pizzaSize == "smallPizza" && toppingsSelection == "Supreme" && crustOption == "Glutten_free" && deliveryOption == "on"){
-        var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza +
-            customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-            customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-            customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+        var totalOrder = (customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza +
+            customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+            customerOrder.NnalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+            customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
     
     var orderResults = `
     <h2>Order Placed</h2>
     <p>Number of orders: ${numberOfPizza}</p>
-    <p>Pizza size: Small Pizza- KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[1].smallPizza} </p>
-    <p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-    <p>Toppings: supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[3].Supreme}</p>
-    <p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+    <p>Pizza size: Small Pizza- KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[1].smallPizza} </p>
+    <p>Crust: Glutten_free - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+    <p>Toppings: supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[3].Supreme}</p>
+    <p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
     <hr>
     <p>Total: - KSh. ${totalOrder}</p>
     `;
@@ -241,18 +241,18 @@ $(document).ready(function () {
 
                           //pepperoni and Crispy//
 if (pizzaSize == "mediumPizza" && toppingsSelection == "pepperoni" && crustOption == "crispy" && deliveryOption == "on"){
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza +
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza +
+        customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of Pizza: ${numberOfPizza}</p>
-<p>Pizza size: mediumPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza} </p>
-<p>Crust: Crispy - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy} </p>
-<p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrize[1].Pepperoni}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: mediumPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza} </p>
+<p>Crust: Crispy - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy} </p>
+<p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrize[1].Pepperoni}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
     
@@ -262,18 +262,18 @@ alert("you will be delivered" + inputLocation)
     }
 // pizza with pepperoni and stuffed//
 if (pizzaSize == "mediumPizza" && toppingsSelection == "pepperoni" && crustOption == "Stuffed" && deliveryOption == "on"){
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizzaPizza +
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizzaPizza +
+        customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: mediumPrize - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza} </p>
-<p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-<p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrize[1].Pepperoni}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrize}</p>
+<p>Pizza size: mediumPrize - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza} </p>
+<p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+<p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrize[1].Pepperoni}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrize}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -283,18 +283,18 @@ prompt("you will be delivered" + inputLocation)
 // pizza with perpperoni and Glutten-free//
 if (pizzaSize == "mediumPizza" && toppingsSelection == "pepperoni" && crustOption == "Glutten_free" && deliveryOption == "on"){
 
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza +
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza +
+        customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: mediumPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza} </p>
-<p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-<p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[1].Pepperoni}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: mediumPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza} </p>
+<p>Crust: Glutten_free - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+<p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[1].Pepperoni}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
  `;
@@ -303,18 +303,18 @@ var orderResults = `
  }
 //pizza with Garlic_butter_prawns_chilli and crispy// 
 if (pizzaSize == "mediumPizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "crispy" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza +
-customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza +
+customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h1>Order Placed</h1>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: mediumPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].smallPizza} </p>
-<p>Crust: crispy. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy} </p>
-<p>Toppings:  Garlic_butter_prawns_chilli- KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: mediumPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].smallPizza} </p>
+<p>Crust: crispy. ${customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy} </p>
+<p>Toppings:  Garlic_butter_prawns_chilli- KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -323,18 +323,18 @@ prompt("you will be delivered" + inputLocation)
 }
 // pizza with Garlic_butter_prawns_chilliand stuffed//
 if (pizzaSize == "mediumPizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "Stuffed" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza+
-customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza+
+customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed +
+customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+customerOrder.nalaDelious_Pizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
-<p>Number of orders: ${pizzaNumber}</p>
-<p>Pizza size: mediumPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza} </p>
-<p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-<p>Toppings:  - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Number of orders: ${numberOfPizza}</p>
+<p>Pizza size: mediumPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza} </p>
+<p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+<p>Toppings:  - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -343,18 +343,18 @@ prompt("you will be delivered" + inputLocation)
 }
 // pizza with Garlic_butter_prawns_chilli and Glutten-free//
 if (pizzaSize == "mediumPizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "Glutten_free" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza +
-customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza +
+customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: mediumPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza} </p>
-<p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-<p>Toppings: Pepper0ni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: mediumPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza} </p>
+<p>Crust: Glutten_free - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+<p>Toppings: Pepper0ni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -363,18 +363,18 @@ prompt("you will be delivered" + inputLocation)
 } 
 //pizza Supreme//
 if (pizzaSize == "mediumPizza" && toppingsSelection == "Supreme" && crustOption == "crispy" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza +
-    customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-    customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-    customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza +
+    customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+    customerOrder.nalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+    customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: mediumPizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza} </p>
-<p>Crust: Garlic_butter_prawns_chilli - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].crispy} </p>
-<p>Toppings: Supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[3].supreme}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: mediumPizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza} </p>
+<p>Crust: Garlic_butter_prawns_chilli - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].crispy} </p>
+<p>Toppings: Supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[3].supreme}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -383,18 +383,18 @@ prompt("you will be delivered" + inputLocation)
 }
 // pizza with Garlic_butter_prawns_chilliand stuffed//
 if (pizzaSize == "mediumPrize" && toppingsSelection == "Supreme" &&crustOption=="stuffed"&& deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza +
-    customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-    customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-    customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza +
+    customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed +
+    customerOrder.nalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+    customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: SmallPrize - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza} </p>
-<p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-<p>Toppings: Supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: SmallPrize - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza} </p>
+<p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+<p>Toppings: Supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -403,18 +403,18 @@ prompt("you will be delivered" + inputLocation)
 }
 //pizza with Garlic_butter_prawns_chilli and Glutten-free//
 if (pizzaSize == "mediumPizza" && toppingsSelection == "Supreme" && crustOption == "Glutten_free" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].mediumPizza +
-    customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-    customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-    customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].mediumPizza +
+    customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+    customerOrder.nalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+    customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: medium Pizza- KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[12].mediumPizza} </p>
-<p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-<p>Toppings: supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[3].Supreme}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: medium Pizza- KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[12].mediumPizza} </p>
+<p>Crust: Glutten_free - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+<p>Toppings: supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[3].Supreme}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -425,18 +425,18 @@ alert("you will be delivered" + inputLocation)
          //LargePizza//
 
 if (pizzaSize == "largePizza" && toppingsSelection == "pepperoni" && crustOption == "crispy" && deliveryOption == "on"){
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza +
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza +
+        customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of Pizza: ${numberOfPizza}</p>
-<p>Pizza size: largePizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza} </p>
-<p>Crust: Crispy - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy} </p>
-<p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrize[1].Pepperoni}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: largePizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza} </p>
+<p>Crust: Crispy - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy} </p>
+<p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrize[1].Pepperoni}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
     
@@ -446,18 +446,18 @@ alert("you will be delivered" + inputLocation)
     }
 // pizza with pepperoni and stuffed//
 if (pizzaSize == "largePizza" && toppingsSelection == "pepperoni" && crustOption == "Stuffed" && deliveryOption == "on"){
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizzaPizza +
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizzaPizza +
+        customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: largePrize - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza} </p>
-<p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-<p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrize[1].Pepperoni}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrize}</p>
+<p>Pizza size: largePrize - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza} </p>
+<p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+<p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrize[1].Pepperoni}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrize}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -467,18 +467,18 @@ prompt("you will be delivered" + inputLocation)
 // pizza with perpperoni and Glutten-free//
 if (pizzaSize == "largePizza" && toppingsSelection == "pepperoni" && crustOption == "Glutten_free" && deliveryOption == "on"){
 
-    var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza +
-        customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-        customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[1].Pepperoni +
-        customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+    var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza +
+        customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+        customerOrder.nalaDeliousPizza.toppingsSelectionPrize[1].Pepperoni +
+        customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: largePizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza} </p>
-<p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-<p>Toppings: Pepperoni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[1].Pepperoni}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: largePizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza} </p>
+<p>Crust: Glutten_free - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+<p>Toppings: Pepperoni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[1].Pepperoni}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
  `;
@@ -487,18 +487,18 @@ var orderResults = `
  }
 //pizza with Garlic_butter_prawns_chilli and crispy// 
 if (pizzaSize == "largePizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "crispy" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza +
-customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza +
+customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h1>Order Placed</h1>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: largePizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza} </p>
-<p>Crust: crispy. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy} </p>
+<p>Pizza size: largePizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza} </p>
+<p>Crust: crispy. ${customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy} </p>
 <p>Toppings:  Garlic_butter_prawns_chilli- KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -507,18 +507,18 @@ prompt("you will be delivered" + inputLocation)
 }
 // pizza with Garlic_butter_prawns_chilliand stuffed//
 if (pizzaSize == "largePizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "Stuffed" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].largePizza+
-customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[2].largePizza+
+customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed +
+customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
-<p>Number of orders: ${pizzaNumber}</p>
-<p>Pizza size: largePizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza} </p>
-<p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-<p>Toppings:  - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Number of orders: ${numberOfPizza}</p>
+<p>Pizza size: largePizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza} </p>
+<p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+<p>Toppings:  - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -527,18 +527,18 @@ prompt("you will be delivered" + inputLocation)
 }
 // pizza with Garlic_butter_prawns_chilli and Glutten-free//
 if (pizzaSize == "largePizza" && toppingsSelection == "Garlic_butter_prawns_chilli" && crustOption == "Glutten_free" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza +
-customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
-customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza +
+customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+customerOrder.nalaDeliousPizza.toppingsSelectionPrize[2].Garlic_butter_prawns_chilli +
+customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: largePizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[2].largePizza} </p>
-<p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-<p>Toppings: Pepper0ni - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: largePizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[2].largePizza} </p>
+<p>Crust: Glutten_free - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+<p>Toppings: Pepper0ni - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -547,18 +547,18 @@ prompt("you will be delivered" + inputLocation)
 } 
 //pizza Supreme//
 if (pizzaSize == "largePizza" && toppingsSelection == "Supreme" && crustOption == "crispy" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza +
-    customerOrder.Nala_Delious_Pizza.crustOptionPrize[1].crispy +
-    customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-    customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza +
+    customerOrder.nalaDeliousPizza.crustOptionPrize[1].crispy +
+    customerOrder.nalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+    customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: largePizza - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza} </p>
-<p>Crust: Garlic_butter_prawns_chilli - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].crispy} </p>
-<p>Toppings: Supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[3].supreme}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: largePizza - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza} </p>
+<p>Crust: Garlic_butter_prawns_chilli - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].crispy} </p>
+<p>Toppings: Supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[3].supreme}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -567,18 +567,18 @@ prompt("you will be delivered" + inputLocation)
 }
 // pizza with Garlic_butter_prawns_chilliand stuffed//
 if (pizzaSize == "largePrize" && toppingsSelection == "Supreme" &&crustOption=="stuffed"&& deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza +
-    customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed +
-    customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-    customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza +
+    customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed +
+    customerOrder.nalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+    customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: largePrize - KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza} </p>
-<p>Crust: Stuffed - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[2].Stuffed} </p>
-<p>Toppings: Supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: largePrize - KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza} </p>
+<p>Crust: Stuffed - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[2].Stuffed} </p>
+<p>Toppings: Supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[2].Garlic_butter_prawns_chilli}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -587,18 +587,18 @@ prompt("you will be delivered" + inputLocation)
 }
 //pizza with Garlic_butter_prawns_chilli and Glutten-free//
 if (pizzaSize == "largePizza" && toppingsSelection == "Supreme" && crustOption == "Glutten_free" && deliveryOption == "on"){
-var totalOrder = (CustomerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza +
-    customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free +
-    customerOrder.Nala_Delious_Pizza.toppingsSelectionPrize[3].Supreme +
-    customerOrder.Nala_Delious_Pizza.deliveryPrice) * numberOfPizza;
+var totalOrder = (customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza +
+    customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free +
+    customerOrder.nalaDeliousPizza.toppingsSelectionPrize[3].Supreme +
+    customerOrder.nalaDeliousPizza.deliveryPrice) * numberOfPizza;
 
 var orderResults = `
 <h2>Order Placed</h2>
 <p>Number of orders: ${numberOfPizza}</p>
-<p>Pizza size: large Pizza- KSh. ${customerOrder.Nala_Delious_Pizza.pizzaSizePrize[3].largePizza} </p>
-<p>Crust: Glutten_free - KSh. ${customerOrder.Nala_Delious_Pizza.crustOptionPrize[3].Glutten_free} </p>
-<p>Toppings: supreme - KSh. ${customerOrder.Nala_Delious_Pizza.toppingSelectionPrice[3].Supreme}</p>
-<p>Delivery: - KSh. ${customerOrder.Nala_Delious_Pizza.deliveryPrice}</p>
+<p>Pizza size: large Pizza- KSh. ${customerOrder.nalaDeliousPizza.pizzaSizePrize[3].largePizza} </p>
+<p>Crust: Glutten_free - KSh. ${customerOrder.nalaDeliousPizza.crustOptionPrize[3].Glutten_free} </p>
+<p>Toppings: supreme - KSh. ${customerOrder.nalaDeliousPizza.toppingSelectionPrice[3].Supreme}</p>
+<p>Delivery: - KSh. ${customerOrder.nalaDeliousPizza.deliveryPrice}</p>
 <hr>
 <p>Total: - KSh. ${totalOrder}</p>
 `;
@@ -609,4 +609,9 @@ alert("you will be delivered" + inputLocation)
 
    
      })
+})
+$(document).ready(function(){
+    $("#radiosPizza").click(function(){
+        $("#locationArea").show()
+    })
 })
