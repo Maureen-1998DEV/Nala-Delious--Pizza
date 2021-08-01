@@ -26,7 +26,7 @@
 # Screenshots:
 
 # live link
-Live link to view the project <a href="https://maureen-1998dev.github.io/Delani-Studios/">DELANI STUDIOS</a>
+Live link to view the project <a href="https://maureen-1998dev.github.io/Nala-Delious--Pizza/">DELANI STUDIOS</a>
 # license And Copyright:
 MIT License
 

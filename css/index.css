@@ -80,6 +80,9 @@ cursor:pointer;
     .locationArea{
         display: none;
     }
+    @media screen() {
+        
+    }
 
 
   
