@@ -3,7 +3,7 @@
     padding: 0;
 }
 .orderCalculation {
-    padding: 20px;
+       padding: 20px;
     margin: 0px auto;
     background-color: tomato;
     color: black;
@@ -15,9 +15,9 @@
     top: 15vh;
     right: 25%;
     left: 25%;
-    z-index: 4;
-    display: none;
-    font-size: 20px;
+    z-index: 4;  
+    display: none;  
+
 }
 .card{
     height: 850px !important;
@@ -77,12 +77,11 @@ cursor:pointer;
         text-align: center;
         justify-content: space-evenly;
     }
-    .locationArea{
-        display: none;
-    }
-    @media screen() {
-        
-    }
+    
+     .locationArea{
+         display: none;
+     }   
+    
 
 
   
