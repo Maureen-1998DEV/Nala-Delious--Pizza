@@ -107,18 +107,30 @@ $(document).ready(function(){
        var  newPizzaSelection= new PizzaSelection(myPizzaSizePrize,myToppingsSelectionPrize,myCrustOptionPrize,numberOfPizza,pizzaCheck);
          $("#orderButton").click(function(){
            $(".orderCalculation").toggle();
-         $("#pizzaShow").text(pizzaSize);
-         $("#pizzaCrustShow").text(crustOption);
-         $("#pizzaToppingsShow").text(toppingsSelection);
-          $(".pizzaNumber").text(numberOfPizza);
-           $("#totalChargesShow").text(newPizzaSelection.customerOrderBill());
+         $("#pizzaShow").text("PizzaSize:  "+pizzaSize);
+         $("#pizzaCrustShow").text("Crust: " + crustOption);
+         $("#pizzaToppingsShow").text("Toppings: "+toppingsSelection);
+          $(".pizzaNumber").text("Number of Pizza: "+numberOfPizza);
+           $("#totalChargesShow").text("Total Charges: "+newPizzaSelection.customerOrderBill());
     
          });
         
     });
+    
+      
 
 
 
  });
+ function myFunction() {
+    let text;
+    let person = prompt("Please enter your Location:", " ");
+    if (person == null || person == "") {
+      text = "User cancelled the prompt.";
+    } else {
+      text = "Thank you delivered to: " + person ;
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
 
 

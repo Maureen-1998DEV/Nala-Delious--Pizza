@@ -9,14 +9,16 @@
     color: black;
     border-radius: 4px;
     box-shadow: 0px 0px 10px rgb(219, 22, 48);
-    width: 100%;
+    width: 30%;
     height: 400px;
     position: fixed;
     top: 15vh;
-    right: 25%;
-    left: 25%;
+    right: 15%;
+    left: 60%;
     z-index: 4;  
-    display: none;  
+    display: none;
+    font-size: 25px;
+
 
 }
 .card{
@@ -80,7 +82,7 @@ cursor:pointer;
     
      .locationArea{
          display: none;
-     }   
+     } 
     
 
 

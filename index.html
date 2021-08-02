@@ -75,11 +75,13 @@
 
     <div class="card text-warning bg-dark">
         <div class="orderCalculation">
-            <p  id="pizzaShow">pizza Size:</p>
-            <p id="pizzaCrustShow">Crust:</p>
-            <p id="pizzaToppingsShow">Toppings:</p>
-            <p class="pizzaNumber">Number of Pizza:</p>
-            <p id="totalChargesShow"> Total Charges:</p>
+            <h2>Your Order Summary🥳</h2>
+            <p  id="pizzaShow"></p>
+            <p id="pizzaCrustShow"></p>
+            <p id="pizzaToppingsShow"></p>
+            <p class="pizzaNumber"></p>
+            <p id="totalChargesShow"></p>
+            <p id="demo"></p>
 
         </div>
           
@@ -90,7 +92,7 @@
             <form id="myForm">
                 
 
-            <div class="mb-3">
+            <div class="mb-3 col-6">
                 <label for="Selecting" class="form-label">
                     <h4 class="textfour">Pizza-Size</h4>
                 </label>
@@ -101,7 +103,7 @@
                     <option value="LargePizza">LargePizza-1000</option>
                 </select>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-6">
                 <label for="selection" class="form-label">
                     <h4 class="textfour">Toppings</h4>
                 </label>
@@ -112,7 +114,7 @@
                     <option value="Supreme"> Supreme(beefmince,bacon,Olives)-200</option>
                 </select>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-6">
                 <label for="selection" class="form-label">
                     <h4 class="textfour">Crust</h4>.
 
@@ -129,12 +131,13 @@
                 <label for="numberOfPizza">
                     <h2 class="textfour">Number of Pizza?</h2>
                 </label>
-                <input type="number" min="1" id="numberOfPizza">
+                <input type="number" min="1" id="numberOfPizza" required>
             </div>
             <div class="deliveryOption" value="deliveryOption">
-            <input type="radio"name="Destination" id="radiosPizza">
+            <input onclick="myFunction()"  type="radio"name="Destination" id="radiosPizza">
             <label for="Radiosbutton">Destination Delivery cost Ksh200</label>
         </div>
+        
         <div class="locationArea">
             <label for="text" class="form-label">
                 <h2>Location</h2>
